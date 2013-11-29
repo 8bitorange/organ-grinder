@@ -4,7 +4,7 @@
     <list default="true" id="dffc84fd-d89b-4493-b589-0ecf03447512" name="Default" comment="" />
     <ignored path="organ grinder.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/organgrinder.js" changelist="dffc84fd-d89b-4493-b589-0ecf03447512" time="1385594067625" ignored="false" />
+    <file path="/organgrinder.js" changelist="dffc84fd-d89b-4493-b589-0ecf03447512" time="1385697310358" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,27 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="organgrinder.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="organgrinder.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/organgrinder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="1" selection-start="4220" selection-end="4220" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1385594291000" expanded="true" signature="3095:4220" placeholder="{...}" />
-                <marker date="1385594291000" expanded="true" signature="3289:3425" placeholder="{...}" />
-                <marker date="1385594291000" expanded="true" signature="3473:3676" placeholder="{...}" />
-                <marker date="1385594291000" expanded="true" signature="3725:4216" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.txt">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="0" selection-end="83807" vertical-scroll-proportion="0.3902439">
+            <state line="131" column="24" selection-start="3871" selection-end="3871" vertical-scroll-proportion="0.47166923">
               <folding />
             </state>
           </provider>
@@ -101,8 +84,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/organgrinder.js" />
         <option value="$PROJECT_DIR$/test.txt" />
+        <option value="$PROJECT_DIR$/organgrinder.js" />
       </list>
     </option>
   </component>
@@ -395,22 +378,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/organgrinder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="1" selection-start="4220" selection-end="4220" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1385594291000" expanded="true" signature="3095:4220" placeholder="{...}" />
-            <marker date="1385594291000" expanded="true" signature="3289:3425" placeholder="{...}" />
-            <marker date="1385594291000" expanded="true" signature="3473:3676" placeholder="{...}" />
-            <marker date="1385594291000" expanded="true" signature="3725:4216" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="0" selection-end="83807" vertical-scroll-proportion="0.3902439">
+        <state line="131" column="24" selection-start="3871" selection-end="3871" vertical-scroll-proportion="0.47166923">
           <folding />
         </state>
       </provider>
