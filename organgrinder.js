@@ -94,7 +94,8 @@ function createHAR(address, title, startTime, resources)
 }
 
 var page = require('webpage').create(),
-    system = require('system');
+    system = require('system'),
+    count = 0, renderWait;
 
 if (system.args.length === 1) {
     console.log('Usage: netsniff.js <some URL>');
@@ -109,11 +110,13 @@ if (system.args.length === 1) {
     };
 
     page.onResourceRequested = function (req) {
+        count += 1;
         page.resources[req.id] = {
             request: req,
             startReply: null,
             endReply: null
         };
+        clearTimeout(renderWait);
     };
 
     page.onResourceReceived = function (res) {
@@ -123,21 +126,25 @@ if (system.args.length === 1) {
         if (res.stage === 'end') {
             page.resources[res.id].endReply = res;
         }
+        count -= 1;
+        if (count === 0) {
+            renderWait = setTimeout(function(){
+                var har;
+                page.endTime = new Date();
+                page.title = page.evaluate(function () {
+                    return document.title;
+                });
+                har = createHAR(page.address, page.title, page.startTime, page.resources);
+                console.log(JSON.stringify(har, undefined, 4));
+                phantom.exit();
+            }, 5000);
+        }
     };
 
     page.open(page.address, function (status) {
-        var har;
         if (status !== 'success') {
             console.log('FAIL to load the address');
             phantom.exit(1);
-        } else {
-            page.endTime = new Date();
-            page.title = page.evaluate(function () {
-                return document.title;
-            });
-            har = createHAR(page.address, page.title, page.startTime, page.resources);
-            console.log(JSON.stringify(har, undefined, 4));
-            phantom.exit();
         }
     });
 }
